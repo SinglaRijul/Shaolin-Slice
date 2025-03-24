@@ -1,14 +1,17 @@
+using System.Collections.Generic;
 using UnityEngine;
 
-public class NotSpawner : MonoBehaviour
+public class NoteSpawner : MonoBehaviour
 {
-    public GameObject arrowPrefab;
+    [SerializeField] List<GameObject> arrowPrefabs;
     BeatScroller beatManager;
     ConductorScript conductorScript;
-    public Transform hitPoint; 
-    public Transform spawnPoint; 
-    public float arrowSpeed; 
+    [SerializeField] List<Transform> hitPoints; 
+    [SerializeField] List<Transform> spawnPoints; 
+    [SerializeField] float arrowSpeed; 
     private int nextBeatIndex = 0;
+
+    int currArrowId;
 
     void Start() {
 
@@ -24,7 +27,7 @@ public class NotSpawner : MonoBehaviour
             float songPosition = conductorScript.GetSongPosition();
 
             // Calculate travel time from spawn to hit point
-            float distance = Vector3.Distance(spawnPoint.position, hitPoint.position);
+            float distance = Vector3.Distance(spawnPoints[currArrowId].position, hitPoints[currArrowId].position);
             float travelTime = distance / arrowSpeed;
 
             // Spawn the arrow ahead of time so it reaches the hit point at the correct moment
@@ -38,7 +41,16 @@ public class NotSpawner : MonoBehaviour
 
     void SpawnArrow()
     {
-        GameObject arrow = Instantiate(arrowPrefab, spawnPoint.position, arrowPrefab.transform.rotation , transform);
+        currArrowId = GetRandomId();
+        GameObject arrow = Instantiate(arrowPrefabs[currArrowId], spawnPoints[currArrowId].position, arrowPrefabs[currArrowId].transform.rotation , transform);
         arrow.GetComponent<NoteController>().speed = arrowSpeed;    
+    }
+
+
+    int GetRandomId()
+    {
+        int randomId = Random.Range(0 , 3);
+        return randomId;
+
     }
 }

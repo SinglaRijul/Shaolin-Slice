@@ -49,7 +49,7 @@ public class ButtonController : MonoBehaviour
             }
 
             canBePressed = true;
-            Debug.Log("Expected id ---> " + currId + "\n");
+            //Debug.Log("Expected id ---> " + currId + "\n");
 
         }
     }

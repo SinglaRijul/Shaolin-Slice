@@ -44,4 +44,11 @@ public class ConductorScript : MonoBehaviour
 
 
     }
+
+
+    public float GetSongPosition()
+    {
+        return songPosition;
+        //return songPosInBeats;
+    }
 }

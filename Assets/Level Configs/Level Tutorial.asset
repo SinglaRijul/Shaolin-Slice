@@ -12,5 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac644291975be474e85cfb27fa7f8475, type: 3}
   m_Name: Level Tutorial
   m_EditorClassIdentifier: 
-  npcIdleSprite: {fileID: 0}
-  npcSprites: []
+  npcIdleSprite: {fileID: 21300000, guid: c2fc25cedb667064ab2ce1c3a5e7a4ac, type: 3}
+  npcSprites:
+  - {fileID: 21300000, guid: 7a5d82205aff8ed4bb1540119e5749c3, type: 3}
+  - {fileID: 21300000, guid: c5b24fbef7a478a439d5301f61fe334b, type: 3}
+  - {fileID: 21300000, guid: 0294761fb01b2b340b42470024359312, type: 3}
+  - {fileID: 21300000, guid: a1fd6e11bbf1d9c4196545a1a99cc663, type: 3}

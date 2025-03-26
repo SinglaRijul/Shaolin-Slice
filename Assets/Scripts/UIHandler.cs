@@ -5,6 +5,7 @@ public class UIHandler : MonoBehaviour
 {
 
     [SerializeField] GameObject levelSelectorObj;
+    [SerializeField] GameObject pauseMenuObj;
 
     ConductorScript conductorScript;
 
@@ -40,4 +41,9 @@ public class UIHandler : MonoBehaviour
         SceneManager.LoadScene(0);
     }
 
+
+    public void SetPauseMenu()
+    {
+        pauseMenuObj.SetActive(!pauseMenuObj.activeInHierarchy);
+    }
 }

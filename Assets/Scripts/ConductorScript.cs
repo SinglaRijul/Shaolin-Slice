@@ -52,7 +52,7 @@ public class ConductorScript : MonoBehaviour
 
     void Update()
     {   
-        // songPosition = audioSource.time;
+        //songPosition = audioSource.time;
         //Debug.Log($"song position : {songPosition}");
         
         if(!songStarted) return;
@@ -122,6 +122,11 @@ public class ConductorScript : MonoBehaviour
             playerSR.sprite = playerSprites[index-1];
 
         }
+    }
+
+    public bool GetSongStarted()
+    {
+        return songStarted;
     }
 
 }

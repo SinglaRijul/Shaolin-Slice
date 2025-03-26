@@ -1,4 +1,5 @@
 using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class ConductorScript : MonoBehaviour
@@ -23,6 +24,16 @@ public class ConductorScript : MonoBehaviour
  
     AudioSource audioSource;
 
+    int currentLevel;
+
+    [SerializeField] Sprite playerIdleSprite;
+
+    [SerializeField] List<Sprite> playerSprites;
+
+    [SerializeField] SpriteRenderer npcSR;
+    [SerializeField] SpriteRenderer playerSR;
+
+    [SerializeField] List<LevelConfigSO> levelConfigs;
 
     void Start()
     {
@@ -49,9 +60,6 @@ public class ConductorScript : MonoBehaviour
         songPosition = (float)(AudioSettings.dspTime - secsPassedSinceStart);
 
         songPosInBeats = songPosition/secsPerBeat;
-        
-
-
 
     }
 
@@ -63,6 +71,10 @@ public class ConductorScript : MonoBehaviour
     }
     public IEnumerator StartSongWithSync(int levelId)
     {
+        currentLevel = levelId;
+
+        InitSprites();
+
         // Start the audio
         audioSource.Play();
         
@@ -76,4 +88,40 @@ public class ConductorScript : MonoBehaviour
         secsPassedSinceStart = (float)AudioSettings.dspTime - audioSource.time;
         songStarted = true;
     }
+
+
+    
+    public void InitSprites()
+    {
+        if(playerSR || npcSR == null) return;
+        
+        //player idle sprite
+        playerSR.sprite = playerIdleSprite;
+
+        //npc idle sprite
+        npcSR.sprite = levelConfigs[currentLevel].GetNpcIdleSprite();
+
+    }
+
+    public void SetNpcSprite(int index)
+    {
+        // 0 means idle
+        if(index == 0) npcSR.sprite = levelConfigs[currentLevel].GetNpcIdleSprite();
+        else
+        {
+            npcSR.sprite = levelConfigs[currentLevel].GetNpcSpriteAt(index-1);
+
+        }
+    }
+    public void SetPlayerSprite(int index)
+    {
+        // 0 means idle
+        if(index == 0) playerSR.sprite = playerIdleSprite;
+        else
+        {
+            playerSR.sprite = playerSprites[index-1];
+
+        }
+    }
+
 }

@@ -29,10 +29,12 @@ public class NoteSpawner : MonoBehaviour
             // Calculate travel time from spawn to hit point
             float distance = Vector3.Distance(spawnPoints[currArrowId].position, hitPoints[currArrowId].position);
             float travelTime = distance / arrowSpeed;
+            // Debug.Log($"Song Position: {songPosition}, Next Beat Time: {beatManager.GetBeatTimes()[nextBeatIndex]}, Travel Time: {travelTime} , SongPosInBeats : {conductorScript.GetSongPosition()}");
 
             // Spawn the arrow ahead of time so it reaches the hit point at the correct moment
             if (songPosition >= beatManager.GetBeatTimes()[nextBeatIndex] - travelTime)
             {
+                 //Debug.Log($"Spawning Arrow for Beat Index {nextBeatIndex}");
                 SpawnArrow();
                 nextBeatIndex++;
             }

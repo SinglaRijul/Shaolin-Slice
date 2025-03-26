@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class ButtonController : MonoBehaviour
 {
@@ -6,7 +7,7 @@ public class ButtonController : MonoBehaviour
     [SerializeField] KeyCode keyPressed;
     [SerializeField] int keyId;
     
-    bool canBePressed = false;
+    [SerializeField] bool canBePressed = false;
 
     int currId = -1;
     SpriteRenderer theSR;
@@ -21,19 +22,31 @@ public class ButtonController : MonoBehaviour
 
     void Update()
     {
-    
+
+
         if(Input.GetKeyDown(keyPressed) && canBePressed)
         {
-                //corr press
-                theSR.color = Color.white;
-                canBePressed = false;
-                if(currNote!=null) {Destroy(currNote);}
+            //corr press
+            theSR.color = Color.green;
+            canBePressed = false;
+            if(currNote!=null) {Destroy(currNote);}
     
         }
-        
+        else if( (Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.DownArrow)|| Input.GetKeyDown(KeyCode.UpArrow)|| Input.GetKeyDown(KeyCode.RightArrow) ) && canBePressed)
+        {
+            //wrong press
+            theSR.color = Color.red;
+            Debug.Log($"key pressed {keyPressed}");
+            canBePressed = false;
+
+            Invoke("ResetColor" , 0.2f);
+            
+        }
+
+
         if (Input.GetKeyUp(keyPressed))
         {
-            theSR.color = Color.black;
+            ResetColor();
         }
 
     }
@@ -44,11 +57,11 @@ public class ButtonController : MonoBehaviour
         {
             currNote = collision.gameObject;
             noteScript =  collision.gameObject.GetComponent<NoteController>();
-            if(noteScript!=null) { currId = noteScript.GetId(); 
+            if(noteScript!=null)  currId = noteScript.GetId(); 
                 //Debug.Log("script not null");
-            }
+            
 
-            canBePressed = true;
+           canBePressed = true;
             //Debug.Log("Expected id ---> " + currId + "\n");
 
         }
@@ -63,4 +76,10 @@ public class ButtonController : MonoBehaviour
             currNote = null;
         }
     }
+
+    void ResetColor()
+    {
+        theSR.color = Color.black;
+    }
+
 }

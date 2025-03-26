@@ -34,7 +34,7 @@ public class ConductorScript : MonoBehaviour
         // audioSource.Play();
 
         // secsPassedSinceStart = (float)AudioSettings.dspTime;
-        StartCoroutine(StartSongWithSync());
+        //StartCoroutine(StartSongWithSync());
         
 
     }
@@ -42,7 +42,7 @@ public class ConductorScript : MonoBehaviour
     void Update()
     {   
         // songPosition = audioSource.time;
-        Debug.Log($"song position : {songPosition}");
+        //Debug.Log($"song position : {songPosition}");
         
         if(!songStarted) return;
 
@@ -61,7 +61,7 @@ public class ConductorScript : MonoBehaviour
         return songPosition;
         //return songPosInBeats;
     }
-    IEnumerator StartSongWithSync()
+    public IEnumerator StartSongWithSync(int levelId)
     {
         // Start the audio
         audioSource.Play();

@@ -34,7 +34,7 @@ public class NoteSpawner : MonoBehaviour
             float travelTime = distance / arrowSpeed;
             //Debug.Log($"Song Position: {songPosition}, Next Beat Time: {beatManager.GetBeatTimes()[nextBeatIndex]}, Travel Time: {travelTime} , SongPosInBeats : {conductorScript.GetSongPosition()}");
 
-            Vector3 spawnPos = spawnPoints[currArrowId].position;
+           
 
             //if travel time  is larger than the next beat time
             // if(Mathf.Abs(travelTime -beatManager.GetBeatTimes()[nextBeatIndex]) > Mathf.Epsilon)
@@ -54,23 +54,23 @@ public class NoteSpawner : MonoBehaviour
             if (songPosition >= beatManager.GetBeatTimes()[nextBeatIndex] - travelTime)
             {
                 Debug.Log($"Spawning Arrow {currArrowId}");
-                SpawnArrow(spawnPos);
+                SpawnArrow();
                 nextBeatIndex++;
             }
         }
     }
 
-    void SpawnArrow(Vector3 spawnPosition)
+    void SpawnArrow()
     {
         currArrowId = GetRandomId();
-        GameObject arrow = Instantiate(arrowPrefabs[currArrowId], spawnPosition, arrowPrefabs[currArrowId].transform.rotation , transform);
+        GameObject arrow = Instantiate(arrowPrefabs[currArrowId], spawnPoints[currArrowId].position, arrowPrefabs[currArrowId].transform.rotation , transform);
         arrow.GetComponent<NoteController>().speed = arrowSpeed;    
     }
 
 
     int GetRandomId()
     {
-        int randomId = Random.Range(0 , 3);
+        int randomId = Random.Range(0,3);
         return randomId;
 
     }

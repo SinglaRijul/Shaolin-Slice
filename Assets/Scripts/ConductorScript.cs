@@ -35,9 +35,15 @@ public class ConductorScript : MonoBehaviour
 
     [SerializeField] List<LevelConfigSO> levelConfigs;
 
+    [SerializeField] List<AudioClip> levelAudios;
+
+    BeatScroller beatScrollerScript;
+
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
+        beatScrollerScript = FindAnyObjectByType<BeatScroller>();
+
 
         secsPerBeat = 60f/ songsBpm;
 
@@ -76,7 +82,20 @@ public class ConductorScript : MonoBehaviour
         InitSprites();
 
         // Start the audio
+        //audioSource.clip = levelAudios[levelId];
+        
+        //calculation
+        float songDuration = audioSource.clip.length;
+        //Debug.Log($"song duration: {songDuration}");
+
+        beatScrollerScript.LoadBeatData(levelId);
+        songsBpm = (beatScrollerScript.GetTotalBeats()/songDuration)*60f;
+        secsPerBeat = 60f/songsBpm;
+        beatScrollerScript.SetBeatTempo(songsBpm/60f);
+        
         audioSource.Play();
+        
+        
         
         // Wait until the audio source actually starts playing
         while (audioSource.time <= 0)
@@ -124,9 +143,6 @@ public class ConductorScript : MonoBehaviour
         }
     }
 
-    public bool GetSongStarted()
-    {
-        return songStarted;
-    }
+    public bool GetSongStarted() => songStarted;
 
 }

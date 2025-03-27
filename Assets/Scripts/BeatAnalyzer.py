@@ -12,9 +12,9 @@ tempo , beat_frames = librosa.beat.beat_track(onset_envelope = onset_env , sr = 
 
 beat_times = librosa.frames_to_time(beat_frames , sr = sample_rate)
 
+#song_duration = librosa.get_duration(y=audio_data , sr=sample_rate)
 
-
-output_path = "H:\\game jam 22 march\\Shaolin-Slice\\Assets\Scripts\\beatmap_tutorial.json"
+output_path = "H:\\game jam 22 march\\Shaolin-Slice\\Assets\\BeatMaps\\1_beatmap.json"
 
 beat_times_list = beat_times.tolist()
 

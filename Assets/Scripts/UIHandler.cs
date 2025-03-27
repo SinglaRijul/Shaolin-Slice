@@ -6,12 +6,14 @@ public class UIHandler : MonoBehaviour
 
     [SerializeField] GameObject levelSelectorObj;
     [SerializeField] GameObject pauseMenuObj;
+    [SerializeField] GameObject pauseButton;
 
     ConductorScript conductorScript;
 
     void Awake()
     {
         conductorScript = FindAnyObjectByType<ConductorScript>();
+        ShowLevelSelector();
     }
 
     void Update()
@@ -23,7 +25,8 @@ public class UIHandler : MonoBehaviour
 
     public void ShowLevelSelector()
     {
-        if(!levelSelectorObj.activeInHierarchy) levelSelectorObj.SetActive(true); 
+        if(!levelSelectorObj.activeInHierarchy) levelSelectorObj.SetActive(true);
+        pauseButton.SetActive(false); 
     }
 
     public void HideLevelSelector(int levelId)
@@ -31,6 +34,7 @@ public class UIHandler : MonoBehaviour
         if(levelSelectorObj.activeInHierarchy) levelSelectorObj.SetActive(false);
 
         if(conductorScript==null) return;
+        pauseButton.SetActive(true);
         StartCoroutine(conductorScript.StartSongWithSync(levelId));
 
     }

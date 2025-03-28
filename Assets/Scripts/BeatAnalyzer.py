@@ -35,7 +35,7 @@ print("Complete! Beats detected:", len(beat_times_list))
 # Plot onset strength with detected beats
 plt.figure(figsize=(10, 4))
 plt.plot(times, onset_env, label="Onset Strength", color="b")
-plt.vlines(beat_times, 0, max(onset_env), color="r", linestyle="--", label="Detected Beats")
+#plt.vlines(beat_times, 0, max(onset_env), color="r", linestyle="--", label="Detected Beats")
 
 plt.xlabel("Time (seconds)")
 plt.xticks(np.arange(0, int(times[-1]) + 1, step=1))  # Ensure every second is labeled

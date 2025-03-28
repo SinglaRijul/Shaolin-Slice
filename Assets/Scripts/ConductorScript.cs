@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class ConductorScript : MonoBehaviour
@@ -24,7 +25,7 @@ public class ConductorScript : MonoBehaviour
  
     AudioSource audioSource;
 
-    int currentLevel;
+    int currentLevel = -1;
 
     [SerializeField] Sprite playerIdleSprite;
 
@@ -38,21 +39,28 @@ public class ConductorScript : MonoBehaviour
     [SerializeField] List<AudioClip> levelAudios;
 
     BeatScroller beatScrollerScript;
+    NoteSpawner noteSpawner;
 
+    int score =0;
+    [SerializeField] TextMeshProUGUI scoreText;
+    [SerializeField] TextMeshProUGUI hitText;
+
+    UIHandler uiHandler;
+
+
+    Animator anim;
+
+    
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
         beatScrollerScript = FindAnyObjectByType<BeatScroller>();
+        anim = GetComponent<Animator>();
+        uiHandler = FindAnyObjectByType<UIHandler>();
+        noteSpawner = FindAnyObjectByType<NoteSpawner>();
 
-
+        
         secsPerBeat = 60f/ songsBpm;
-
-        
-        // audioSource.Play();
-
-        // secsPassedSinceStart = (float)AudioSettings.dspTime;
-        //StartCoroutine(StartSongWithSync());
-        
 
     }
 
@@ -61,12 +69,20 @@ public class ConductorScript : MonoBehaviour
         //songPosition = audioSource.time;
         //Debug.Log($"song position : {songPosition}");
         
+        if(!audioSource.isPlaying && currentLevel!=-1 )
+        {
+            uiHandler.SetGameStatus(true , score);
+            currentLevel=-1;
+        }
+
         if(!songStarted) return;
 
         songPosition = (float)(AudioSettings.dspTime - secsPassedSinceStart);
         //songPosition = audioSource.time;
 
         songPosInBeats = songPosition/secsPerBeat;
+
+
 
     }
 
@@ -81,7 +97,8 @@ public class ConductorScript : MonoBehaviour
         currentLevel = levelId;
 
         InitSprites();
-
+        InitScore();
+        noteSpawner.InitVariables();
         // Start the audio
         //audioSource.clip = levelAudios[levelId];
         
@@ -146,4 +163,25 @@ public class ConductorScript : MonoBehaviour
 
     public bool GetSongStarted() => songStarted;
 
+
+    public int GetScore() => score;
+
+    public void AddScore(int add) 
+    {
+        //anim.SetBool("hasScored" , true);
+        score += add;
+        
+    }
+
+    void InitScore()
+    {
+        score = 0;
+        SetScoreText();
+    }
+
+    public void SetScoreText() => scoreText.text = score.ToString();
+    
+    //public void ResetScoreAnimation() => anim.SetBool("hasScored" , false);
+
+    public void SetHitText(string text) => hitText.text = text;
 }

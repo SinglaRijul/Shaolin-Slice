@@ -10,7 +10,7 @@ public class NoteSpawner : MonoBehaviour
     [SerializeField] List<Transform> hitPoints; 
     [SerializeField] List<Transform> spawnPoints; 
     [SerializeField] float arrowSpeed; 
-
+    [SerializeField] float speedAdjustmentfactor = 1f;
 
     private int nextBeatIndex = 0;
 
@@ -30,7 +30,7 @@ public class NoteSpawner : MonoBehaviour
             //Debug.Log($"beat index {nextBeatIndex}");
             float songPosition = conductorScript.GetSongPosition();
 
-            if (songPosition < 0.2f) return; 
+            //if (songPosition < 0.1f) return; 
 
             // Calculate travel time from spawn to hit point
             float distance = Vector3.Distance(spawnPoints[currArrowId].position, hitPoints[currArrowId].position);
@@ -39,23 +39,10 @@ public class NoteSpawner : MonoBehaviour
             //Debug.Log($"Song Position: {songPosition}, Next Beat Time: {beatManager.GetBeatTimes()[nextBeatIndex]}, Travel Time: {travelTime} , SongPosInBeats : {conductorScript.GetSongPosition()}");
 
             float timeToNextBeat = beatManager.GetBeatTimes()[nextBeatIndex] - songPosition;
-            arrowSpeed = distance / Mathf.Max(timeToNextBeat, 0.5f);
+            arrowSpeed = distance / Mathf.Max(timeToNextBeat, 0.01f) * speedAdjustmentfactor;
 
             float travelTime = Mathf.Min(distance / arrowSpeed, 1f);
-            Debug.Log($"Song Position: {songPosition}, Next Beat Time: {beatManager.GetBeatTimes()[nextBeatIndex]}, Travel Time: {travelTime} , SongPosInBeats : {conductorScript.GetSongPosition()}");
-
-            //if travel time  is larger than the next beat time
-            // if(Mathf.Abs(travelTime -beatManager.GetBeatTimes()[nextBeatIndex]) > Mathf.Epsilon)
-            // {
-            //     //recalculate distance
-            //     distance = arrowSpeed * (beatManager.GetBeatTimes()[nextBeatIndex]- songPosition);
-            //     spawnPos = hitPoints[currArrowId].position + Vector3.up * distance;
-            //     Debug.Log($"new spawn pos {spawnPosa}");
-
-            //     SpawnArrow(spawnPos);
-            //     return;
-
-            // }
+            //Debug.Log($"Song Position: {songPosition}, Next Beat Time: {beatManager.GetBeatTimes()[nextBeatIndex]}, Travel Time: {travelTime} , SongPosInBeats : {conductorScript.GetSongPosition()}");
 
 
             // float distance = 9f;
@@ -71,6 +58,9 @@ public class NoteSpawner : MonoBehaviour
             //Spawn the arrow ahead of time so it reaches the hit point at the correct moment
             if (songPosition >= beatManager.GetBeatTimes()[nextBeatIndex] - travelTime)
             {
+                
+                //Debug.Log($"Song Position: {songPosition}, Next Beat Time: {beatManager.GetBeatTimes()[nextBeatIndex]}, Travel Time: {travelTime} , SongPosInBeats : {conductorScript.GetSongPosition()}");
+
                 //Debug.Log($"Spawning Arrow {currArrowId}");
                 SpawnArrow();
                 nextBeatIndex++;
@@ -91,5 +81,10 @@ public class NoteSpawner : MonoBehaviour
         int randomId = Random.Range(0,3);
         return randomId;
 
+    }
+
+    public void InitVariables()
+    {
+        nextBeatIndex = 0;
     }
 }

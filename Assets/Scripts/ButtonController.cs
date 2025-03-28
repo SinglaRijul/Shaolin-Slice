@@ -18,6 +18,8 @@ public class ButtonController : MonoBehaviour
 
     GameObject currNote= null;
 
+    float noteEntryTime;
+
     int didPressButton = 0; // -1 indicated wrong button pressed, 0 indicates no button pressed , 1 indicated correct button pressed
 
     string notesTag = "Notes";
@@ -34,14 +36,33 @@ public class ButtonController : MonoBehaviour
 
         if(Input.GetKeyDown(keyPressed) && canBePressed)
         {
+            float stayDuration = Time.time - noteEntryTime;
+
+
+            if (stayDuration <= 0.1f)
+            {
+                //Debug.Log("🎯 Perfect Hit!");
+                theSR.color = Color.green;
+                conductorScript.AddScore(50);
+                conductorScript.SetHitText("PERFECT!");
+            }
+            else if (stayDuration <= 0.2f)
+            {
+                //Debug.Log("✔️ Good Hit!");
+                theSR.color = Color.yellow;
+                conductorScript.AddScore(20);
+                conductorScript.SetHitText("GOOD!");
+            }
+
+
             //corr press
-            theSR.color = Color.green;
+            //theSR.color = Color.green;
             canBePressed = false;
             if(currNote!=null) {Destroy(currNote);}
 
             didPressButton = 1;
 
-            //set plaeyr sprite for corr press
+            //set player sprite for corr press
             conductorScript.SetPlayerSprite(currId);
 
         }
@@ -66,6 +87,8 @@ public class ButtonController : MonoBehaviour
             
         }
 
+        conductorScript.SetScoreText();
+
     }
 
     void OnTriggerEnter2D(Collider2D collision)
@@ -79,9 +102,11 @@ public class ButtonController : MonoBehaviour
 
 
             canBePressed = true;
-            
+            noteEntryTime = Time.time;
+
             //change npc sprite
             conductorScript.SetNpcSprite(currId);
+
 
         }
     }
@@ -96,7 +121,10 @@ public class ButtonController : MonoBehaviour
 
             if(didPressButton==0)
             {
+               // Debug.Log("MISSED");
                 theSR.color = Color.red;
+                conductorScript.AddScore(0);
+                conductorScript.SetHitText("MISS!");
                 Invoke("ResetColor" , 0.05f);   
 
             }

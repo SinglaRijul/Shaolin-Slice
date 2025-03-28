@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class ConductorScript : MonoBehaviour
@@ -31,7 +32,8 @@ public class ConductorScript : MonoBehaviour
 
     [SerializeField] List<Sprite> playerSprites;
 
-    [SerializeField] SpriteRenderer npcSR;
+    [SerializeField] GameObject npcObj;
+    SpriteRenderer npcSR;
     [SerializeField] SpriteRenderer playerSR;
 
     [SerializeField] List<LevelConfigSO> levelConfigs;
@@ -55,10 +57,13 @@ public class ConductorScript : MonoBehaviour
     {
         audioSource = GetComponent<AudioSource>();
         beatScrollerScript = FindAnyObjectByType<BeatScroller>();
-        anim = GetComponent<Animator>();
+        anim = npcObj.GetComponent<Animator>();
         uiHandler = FindAnyObjectByType<UIHandler>();
         noteSpawner = FindAnyObjectByType<NoteSpawner>();
 
+        currentLevel = -1;
+
+        npcSR = npcObj.GetComponent<SpriteRenderer>();
         
         secsPerBeat = 60f/ songsBpm;
 
@@ -100,8 +105,14 @@ public class ConductorScript : MonoBehaviour
         InitScore();
         noteSpawner.InitVariables();
         // Start the audio
-        //audioSource.clip = levelAudios[levelId];
+        audioSource.clip = levelConfigs[levelId].GetLevelAudio();
         
+
+        if(currentLevel!=0)
+        {
+            //play animation
+            anim.runtimeAnimatorController = levelConfigs[currentLevel].GetAnimControllerNpc();
+        }
         //calculation
         float songDuration = audioSource.clip.length;
         //Debug.Log($"song duration: {songDuration}");
@@ -142,6 +153,7 @@ public class ConductorScript : MonoBehaviour
 
     public void SetNpcSprite(int index)
     {
+        if(currentLevel!=0) return;
         // 0 means idle
         if(index == 0) npcSR.sprite = levelConfigs[currentLevel].GetNpcIdleSprite();
         else

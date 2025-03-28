@@ -96,7 +96,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 64
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -161,20 +161,20 @@ TextureImporter:
       name: panda_0
       rect:
         serializedVersion: 2
-        x: 14
-        y: 39
-        width: 11
-        height: 10
+        x: 0
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 61d46f4b5f69401d0800000000000000
-      internalID: -3385415037828575978
+      spriteID: 71d43c069e3c15346a07ee38f49bc79e
+      internalID: -715558269
       vertices: []
       indices: 
       edges: []
@@ -183,20 +183,20 @@ TextureImporter:
       name: panda_1
       rect:
         serializedVersion: 2
-        x: 16
+        x: 64
         y: 0
-        width: 44
-        height: 54
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 8f2e6d54a1c07c8d0800000000000000
-      internalID: -2826276934171303176
+      spriteID: 804fea4af43380040b8da9018024cbc1
+      internalID: -1929102393
       vertices: []
       indices: 
       edges: []
@@ -205,20 +205,20 @@ TextureImporter:
       name: panda_2
       rect:
         serializedVersion: 2
-        x: 78
-        y: 39
-        width: 11
-        height: 10
+        x: 128
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 0f67baf861d6399c0800000000000000
-      internalID: -3921670906842482960
+      spriteID: 2d73945b9847fe44eaa3db3f3fd957cd
+      internalID: 1088947366
       vertices: []
       indices: 
       edges: []
@@ -227,20 +227,20 @@ TextureImporter:
       name: panda_3
       rect:
         serializedVersion: 2
-        x: 80
+        x: 192
         y: 0
-        width: 44
-        height: 54
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 01dd86dbb84df5ee0800000000000000
-      internalID: -1270062873251881712
+      spriteID: cb776bab7926c5b4bb0d9a554e700ce4
+      internalID: 329149424
       vertices: []
       indices: 
       edges: []
@@ -249,20 +249,20 @@ TextureImporter:
       name: panda_4
       rect:
         serializedVersion: 2
-        x: 142
-        y: 39
-        width: 11
-        height: 10
+        x: 256
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 8776adc378c761780800000000000000
-      internalID: -8712639508818270344
+      spriteID: 2b5177c4abbc4cb4c91c7757f4bf021a
+      internalID: -76244685
       vertices: []
       indices: 
       edges: []
@@ -271,20 +271,20 @@ TextureImporter:
       name: panda_5
       rect:
         serializedVersion: 2
-        x: 144
+        x: 320
         y: 0
-        width: 44
-        height: 54
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 2f1ec6a7360c80d90800000000000000
-      internalID: -7131238476452929038
+      spriteID: 7208feb8561f38848b406b162d2a972e
+      internalID: -1375799820
       vertices: []
       indices: 
       edges: []
@@ -293,20 +293,20 @@ TextureImporter:
       name: panda_6
       rect:
         serializedVersion: 2
-        x: 206
-        y: 39
-        width: 11
-        height: 10
+        x: 384
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: dc79cd40a24e90e90800000000000000
-      internalID: -7058860071805216819
+      spriteID: 4450c5918ddfe6c43a5ea5a7d84e8245
+      internalID: -1829149538
       vertices: []
       indices: 
       edges: []
@@ -315,196 +315,20 @@ TextureImporter:
       name: panda_7
       rect:
         serializedVersion: 2
-        x: 208
+        x: 448
         y: 0
-        width: 44
-        height: 54
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: b57fac999d0fed960800000000000000
-      internalID: 7628799636190984027
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: panda_8
-      rect:
-        serializedVersion: 2
-        x: 270
-        y: 38
-        width: 11
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3fa41e6ac7d39f180800000000000000
-      internalID: -9081159568030872845
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: panda_9
-      rect:
-        serializedVersion: 2
-        x: 272
-        y: 0
-        width: 44
-        height: 54
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f1acfac557d0d2cf0800000000000000
-      internalID: -275549204482373089
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: panda_10
-      rect:
-        serializedVersion: 2
-        x: 334
-        y: 38
-        width: 11
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 259b26c917f48da40800000000000000
-      internalID: 5393147903149783378
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: panda_11
-      rect:
-        serializedVersion: 2
-        x: 336
-        y: 0
-        width: 44
-        height: 54
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3ac965e65d7a202c0800000000000000
-      internalID: -4466823345277068125
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: panda_12
-      rect:
-        serializedVersion: 2
-        x: 398
-        y: 38
-        width: 11
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: ae1327bc9db617900800000000000000
-      internalID: 680443601874989546
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: panda_13
-      rect:
-        serializedVersion: 2
-        x: 400
-        y: 0
-        width: 44
-        height: 54
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 9314a17b54ac1baf0800000000000000
-      internalID: -382302092576276167
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: panda_14
-      rect:
-        serializedVersion: 2
-        x: 462
-        y: 38
-        width: 11
-        height: 10
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 59e97915504cc9cd0800000000000000
-      internalID: -2549947761875771755
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: panda_15
-      rect:
-        serializedVersion: 2
-        x: 464
-        y: 0
-        width: 44
-        height: 54
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3b908263971216230800000000000000
-      internalID: 3630219579120683443
+      spriteID: 00a83be63e9c21243912d4df842b7d9b
+      internalID: 2093427148
       vertices: []
       indices: 
       edges: []
@@ -513,7 +337,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 065e39d49b13f764fa0f29d3934be013
     internalID: 0
     vertices: []
     indices: 
@@ -522,7 +346,15 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      panda_0: -715558269
+      panda_1: -1929102393
+      panda_2: 1088947366
+      panda_3: 329149424
+      panda_4: -76244685
+      panda_5: -1375799820
+      panda_6: -1829149538
+      panda_7: 2093427148
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

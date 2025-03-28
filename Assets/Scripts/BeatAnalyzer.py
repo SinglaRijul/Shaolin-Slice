@@ -4,27 +4,30 @@ import matplotlib.pyplot as plt
 import numpy as np
 from scipy.signal import find_peaks
 
-file_path = "H:\game jam 22 march\Shaolin-Slice\Assets\Music\Soundtrack\Dawn on the Mountains.mp3"
+file_path = "H:\game jam 22 march\Shaolin-Slice\Assets\Music\Soundtrack\Rise of the Tea Shop General.mp3"
 
 # Load the audio file
 audio_data, sample_rate = librosa.load(file_path)
 
 # Set hop length (adjustable for sensitivity)
-hop_length = 400
+hop_length = 350
 
 # Compute onset envelope
 onset_env = librosa.onset.onset_strength(y=audio_data, sr=sample_rate, hop_length=hop_length)
 
 # Manually detect beats based on peaks
-threshold = 4.75 # Adjust based on your song
+threshold = 5.40 # Adjust based on your song
 peak_indices, _ = find_peaks(onset_env, height=threshold)  # Find peaks above threshold
 
 # Convert peak indices to time
 times = librosa.times_like(onset_env, sr=sample_rate, hop_length=hop_length)
 beat_times = times[peak_indices]  # Extract beat timestamps
+tempo, beats = librosa.beat.beat_track(y=audio_data, sr=sample_rate, onset_envelope=onset_env, hop_length=hop_length)
+beat_times = librosa.frames_to_time(beats, sr=sample_rate, hop_length=hop_length)
+
 
 # Save to JSON file
-output_path = "H:\\game jam 22 march\\Shaolin-Slice\\Assets\\BeatMaps\\0_beatmap.json"
+output_path = "H:\\game jam 22 march\\Shaolin-Slice\\Assets\\BeatMaps\\1_beatmap.json"
 beat_times_list = beat_times.tolist()
 
 with open(output_path, "w") as f:

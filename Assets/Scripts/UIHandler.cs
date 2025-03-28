@@ -31,6 +31,7 @@ public class UIHandler : MonoBehaviour
         {
             ShowLevelSelector();
             SetLevelOverObj();
+            levelOverText.text = $"FINAL SCORE \n{finalScore} \n You did great!";
             isLevelOver = false;
             
         }

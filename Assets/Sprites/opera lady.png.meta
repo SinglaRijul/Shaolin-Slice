@@ -120,7 +120,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -185,10 +185,10 @@ TextureImporter:
       name: opera lady_0
       rect:
         serializedVersion: 2
-        x: 2
-        y: 48
-        width: 7
-        height: 8
+        x: 0
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -207,9 +207,9 @@ TextureImporter:
       name: opera lady_1
       rect:
         serializedVersion: 2
-        x: 6
+        x: 64
         y: 0
-        width: 48
+        width: 64
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -229,10 +229,10 @@ TextureImporter:
       name: opera lady_2
       rect:
         serializedVersion: 2
-        x: 50
-        y: 44
-        width: 7
-        height: 8
+        x: 128
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -251,10 +251,10 @@ TextureImporter:
       name: opera lady_3
       rect:
         serializedVersion: 2
-        x: 66
-        y: 48
-        width: 7
-        height: 8
+        x: 192
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -273,9 +273,9 @@ TextureImporter:
       name: opera lady_4
       rect:
         serializedVersion: 2
-        x: 70
+        x: 256
         y: 0
-        width: 48
+        width: 64
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -295,10 +295,10 @@ TextureImporter:
       name: opera lady_5
       rect:
         serializedVersion: 2
-        x: 114
-        y: 44
-        width: 7
-        height: 8
+        x: 320
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -317,10 +317,10 @@ TextureImporter:
       name: opera lady_6
       rect:
         serializedVersion: 2
-        x: 130
-        y: 47
-        width: 7
-        height: 8
+        x: 384
+        y: 0
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -339,9 +339,9 @@ TextureImporter:
       name: opera lady_7
       rect:
         serializedVersion: 2
-        x: 134
+        x: 448
         y: 0
-        width: 48
+        width: 64
         height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -357,363 +357,11 @@ TextureImporter:
       indices: 
       edges: []
       weights: []
-    - serializedVersion: 2
-      name: opera lady_8
-      rect:
-        serializedVersion: 2
-        x: 178
-        y: 45
-        width: 7
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: faa052736378a40b0800000000000000
-      internalID: -5743629707834488145
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: opera lady_9
-      rect:
-        serializedVersion: 2
-        x: 194
-        y: 47
-        width: 7
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d2af95b9f8c15b890800000000000000
-      internalID: -7443011406047610323
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: opera lady_10
-      rect:
-        serializedVersion: 2
-        x: 198
-        y: 0
-        width: 48
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5d69dfec0ecb297b0800000000000000
-      internalID: -5218901344437561643
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: opera lady_11
-      rect:
-        serializedVersion: 2
-        x: 242
-        y: 45
-        width: 7
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 703f5fbcbacb2a890800000000000000
-      internalID: -7448183387670056185
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: opera lady_12
-      rect:
-        serializedVersion: 2
-        x: 258
-        y: 48
-        width: 7
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 3c91673719a5c7090800000000000000
-      internalID: -8035448054381930045
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: opera lady_13
-      rect:
-        serializedVersion: 2
-        x: 262
-        y: 0
-        width: 48
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: dee3a15b0018100f0800000000000000
-      internalID: -1152498189591757075
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: opera lady_14
-      rect:
-        serializedVersion: 2
-        x: 306
-        y: 44
-        width: 7
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 70b1c17842355d9d0800000000000000
-      internalID: -2750200581089125625
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: opera lady_15
-      rect:
-        serializedVersion: 2
-        x: 322
-        y: 48
-        width: 7
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 39ca66fec30aee300800000000000000
-      internalID: 283340010145885331
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: opera lady_16
-      rect:
-        serializedVersion: 2
-        x: 326
-        y: 0
-        width: 48
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 743436e7aa4953960800000000000000
-      internalID: 7581129007733883719
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: opera lady_17
-      rect:
-        serializedVersion: 2
-        x: 370
-        y: 44
-        width: 7
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4de0b10488437ea80800000000000000
-      internalID: -8437717617059623212
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: opera lady_18
-      rect:
-        serializedVersion: 2
-        x: 386
-        y: 47
-        width: 7
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 10476d83d72ab54b0800000000000000
-      internalID: -5450584265293663231
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: opera lady_19
-      rect:
-        serializedVersion: 2
-        x: 390
-        y: 0
-        width: 48
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 535896e3b82222f80800000000000000
-      internalID: -8132899995634793163
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: opera lady_20
-      rect:
-        serializedVersion: 2
-        x: 434
-        y: 45
-        width: 7
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c2583549ff0f72420800000000000000
-      internalID: 2605315889952949548
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: opera lady_21
-      rect:
-        serializedVersion: 2
-        x: 450
-        y: 47
-        width: 7
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f88c37765debf9950800000000000000
-      internalID: 6458090214445533327
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: opera lady_22
-      rect:
-        serializedVersion: 2
-        x: 454
-        y: 0
-        width: 48
-        height: 64
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c5534ab8382724760800000000000000
-      internalID: 7440635443678557532
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: opera lady_23
-      rect:
-        serializedVersion: 2
-        x: 498
-        y: 45
-        width: 7
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 299fcf2a86e2e2550800000000000000
-      internalID: 6137894369098529170
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
     outline: []
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 7e4531c4dca89384b8d74401b287869b
     internalID: 0
     vertices: []
     indices: 
@@ -722,7 +370,15 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      opera lady_0: -3774170962442745333
+      opera lady_1: -5428771449920731188
+      opera lady_2: -3746168744810039861
+      opera lady_3: -3804708859944145106
+      opera lady_4: -2844706103508915077
+      opera lady_5: -8972554662548981135
+      opera lady_6: -2422507476804981497
+      opera lady_7: -6368757089290777989
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

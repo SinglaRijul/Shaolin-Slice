@@ -72,7 +72,6 @@ public class NoteSpawner : MonoBehaviour
     {
         currArrowId = GetRandomId();
         GameObject arrow = Instantiate(arrowPrefabs[currArrowId], spawnPoints[currArrowId].position, arrowPrefabs[currArrowId].transform.rotation , transform);
-        arrow.transform.localScale = Vector3.one * 10f;
         arrow.GetComponent<NoteController>().speed = arrowSpeed;    
     }
 

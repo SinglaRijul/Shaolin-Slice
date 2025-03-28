@@ -7,7 +7,6 @@ public class BeatScroller : MonoBehaviour
 
     [SerializeField] float beatTempo;
     [SerializeField] bool hasStarted;
-    [SerializeField] TextAsset beatMap;
 
     List<float> beatTimes = new List<float>();
 
@@ -44,8 +43,6 @@ public class BeatScroller : MonoBehaviour
 
     void LoadBeatTimes(string levelid)
     {
-        if(beatMap==null){return;}
-
         string filepath =  Application.dataPath + $"/BeatMaps/{levelid}_beatmap.json";
 
         if(File.Exists(filepath))
@@ -53,15 +50,13 @@ public class BeatScroller : MonoBehaviour
             string json = File.ReadAllText(filepath);
             BeatData beatData = JsonUtility.FromJson<BeatData>(json);
             beatTimes = beatData.beats;
-            Debug.Log("Loaded beats");
+            Debug.Log($"Loaded beats from {filepath}");
 
         }
         else
         {
             Debug.Log($"File not found!");
         }
-
-
         
     }
 

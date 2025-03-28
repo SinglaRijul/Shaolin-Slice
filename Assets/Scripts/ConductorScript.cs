@@ -64,6 +64,7 @@ public class ConductorScript : MonoBehaviour
         if(!songStarted) return;
 
         songPosition = (float)(AudioSettings.dspTime - secsPassedSinceStart);
+        //songPosition = audioSource.time;
 
         songPosInBeats = songPosition/secsPerBeat;
 

@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3000090956466378556}
   - component: {fileID: 5912412202118131718}
   - component: {fileID: 3044820483884868058}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Arrow_Right
   m_TagString: Notes
   m_Icon: {fileID: 0}

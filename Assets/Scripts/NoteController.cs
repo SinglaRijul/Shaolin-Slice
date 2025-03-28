@@ -20,7 +20,7 @@ public class NoteController : MonoBehaviour
         //transform.position += Vector3.down * speed * Time.deltaTime;
         transform.position -= new Vector3(0f , speed * Time.deltaTime , 0f);
 
-        if(transform.position.y < -screenBounds.y) {Destroy(this.gameObject , 0.1f);}
+        if(transform.position.y < -5f) {Destroy(this.gameObject , 0.1f);}
     }
 
 

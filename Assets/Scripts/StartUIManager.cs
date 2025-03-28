@@ -51,6 +51,7 @@ public class StartUIManager : MonoBehaviour
     IEnumerator LoadSceneWithFade(string sceneName)
     {
         // Fade in (black screen appears)
+        fadePanel.gameObject.SetActive(true);
         float timer = 0;
         while (timer < fadeDuration)
         {
@@ -59,11 +60,16 @@ public class StartUIManager : MonoBehaviour
             yield return null;
         }
 
+        
+
         // Load the scene asynchronously
         AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(sceneName);
+        
         while (!asyncLoad.isDone)
         {
             yield return null;
         }
+
+        
     }
 }

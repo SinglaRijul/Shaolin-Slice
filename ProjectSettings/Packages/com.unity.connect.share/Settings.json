@@ -19,7 +19,7 @@
             {
                 "type": "System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
                 "key": "buildOutputDirList",
-                "value": "{\"m_Value\":\"H:/game jam 22 march/Shaolin-Slice/WebGL Builds;;;;;;;;;\"}"
+                "value": "{\"m_Value\":\"H:/game jam 22 march/Shaolin-Slice/WebGL Builds/Build v1.7;H:/game jam 22 march/Shaolin-Slice/WebGL Builds/Build v1.6;H:/game jam 22 march/Shaolin-Slice/WebGL Builds/Build v1.5;H:/game jam 22 march/Shaolin-Slice/WebGL Builds/Build v1.4;H:/game jam 22 march/Shaolin-Slice/WebGL Builds/Build v1.3;H:/game jam 22 march/Shaolin-Slice/WebGL Builds;;;;\"}"
             }
         ]
     }

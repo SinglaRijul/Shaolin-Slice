@@ -1800,7 +1800,7 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 0.5
+  m_Volume: 0.65
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -1911,7 +1911,7 @@ MonoBehaviour:
   bgObj: {fileID: 1509876472}
   playerSR: {fileID: 912269838}
   levelConfigs:
-  - {fileID: 11400000, guid: 7a2580e655f599e47840e48421a0a6dd, type: 2}
+  - {fileID: 11400000, guid: e358be9fd679a1c4bab7b652fd3a144a, type: 2}
   - {fileID: 11400000, guid: bf8f118d30a07ec43ab67cd9132b8856, type: 2}
   - {fileID: 11400000, guid: 961cfd25e41d74a4f835ce970d0bc587, type: 2}
   - {fileID: 11400000, guid: 1dd33fa9c2c02b94794efe91205e6a9c, type: 2}
@@ -2030,7 +2030,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: miss
+  m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 3b5bb5ad98c5f944eaa4b581377699d0, type: 2}
   m_sharedMaterial: {fileID: 4825983927891313982, guid: 3b5bb5ad98c5f944eaa4b581377699d0, type: 2}
@@ -2430,7 +2430,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1.0158731, y: 1.0158731}
+  m_Size: {x: 4.266667, y: 4.266667}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 0

@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac644291975be474e85cfb27fa7f8475, type: 3}
+  m_Name: Level One 1
+  m_EditorClassIdentifier: 
+  npcIdleSprite: {fileID: -1841549414, guid: 33693544ff72a664d800ef731e1572f7, type: 3}
+  npcSprites: []
+  levelAudio: {fileID: 8300000, guid: 217072955b925bc46b1d60bf0dda645a, type: 3}
+  npcAnimController: {fileID: 9100000, guid: 1e6b56ed105445d4baccf2577f93eff4, type: 2}

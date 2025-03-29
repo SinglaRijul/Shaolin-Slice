@@ -152,7 +152,7 @@ public class ConductorScript : MonoBehaviour
     
     public void InitSprites()
     {
-        if(playerSR == null || npcSR == null) return;
+        if(playerSR == null || npcSR == null || currentLevel==-1) return;
         
         //player idle sprite
         playerSR.sprite = playerIdleSprite;

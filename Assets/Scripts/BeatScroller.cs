@@ -43,7 +43,8 @@ public class BeatScroller : MonoBehaviour
 
     void LoadBeatTimes(string levelid)
     {
-        string filepath =  Application.dataPath + $"/BeatMaps/{levelid}_beatmap.json";
+        //string filepath =  Application.dataPath + $"/BeatMaps/{levelid}_beatmap.json";
+        string filepath = Path.Combine(Application.streamingAssetsPath, $"BeatMaps/{levelid}_beatmap.json");
 
         if(File.Exists(filepath))
         {

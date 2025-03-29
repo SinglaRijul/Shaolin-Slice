@@ -1,5 +1,4 @@
 using System.Collections.Generic;
-using UnityEditor.Animations;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "LevelConfig", menuName = "Scriptable Objects/LevelConfig")]
@@ -11,7 +10,7 @@ public class LevelConfigSO : ScriptableObject
     [SerializeField] AudioClip levelAudio;
 
 
-    [SerializeField] AnimatorController npcAnimController;
+    [SerializeField] RuntimeAnimatorController npcAnimController;
     
     public Sprite GetNpcSpriteAt(int index)
     {
@@ -26,7 +25,7 @@ public class LevelConfigSO : ScriptableObject
 
     public AudioClip GetLevelAudio() => levelAudio;
     
-    public AnimatorController GetAnimControllerNpc() => npcAnimController;
+    public RuntimeAnimatorController GetAnimControllerNpc() => npcAnimController;
 
     
 }

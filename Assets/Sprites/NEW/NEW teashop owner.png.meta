@@ -1,0 +1,1380 @@
+fileFormatVersion: 2
+guid: 3f472eb89a7ebb2469111f701c68913d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7707345260699807590
+    second: NEW teashop owner_0
+  - first:
+      213: -8383748850009141340
+    second: NEW teashop owner_1
+  - first:
+      213: -6049881695364231521
+    second: NEW teashop owner_2
+  - first:
+      213: -9166426846039794003
+    second: NEW teashop owner_3
+  - first:
+      213: -2962979685310962706
+    second: NEW teashop owner_4
+  - first:
+      213: -6948995828847095977
+    second: NEW teashop owner_5
+  - first:
+      213: -4342311942529905867
+    second: NEW teashop owner_6
+  - first:
+      213: -8138704414394126241
+    second: NEW teashop owner_7
+  - first:
+      213: -5218145523048306156
+    second: NEW teashop owner_8
+  - first:
+      213: -4310114134439255012
+    second: NEW teashop owner_9
+  - first:
+      213: 3005678719051831651
+    second: NEW teashop owner_10
+  - first:
+      213: -1157856195774141899
+    second: NEW teashop owner_11
+  - first:
+      213: 6075574563861891030
+    second: NEW teashop owner_12
+  - first:
+      213: 2562918566812413036
+    second: NEW teashop owner_13
+  - first:
+      213: 4058693629674409397
+    second: NEW teashop owner_14
+  - first:
+      213: 985391858877424529
+    second: NEW teashop owner_15
+  - first:
+      213: -1212336926487720892
+    second: NEW teashop owner_16
+  - first:
+      213: -6114004808187487477
+    second: NEW teashop owner_17
+  - first:
+      213: -2323412662971916769
+    second: NEW teashop owner_18
+  - first:
+      213: 7468572087492761156
+    second: NEW teashop owner_19
+  - first:
+      213: -8369979049911056826
+    second: NEW teashop owner_20
+  - first:
+      213: 5499759276046494319
+    second: NEW teashop owner_21
+  - first:
+      213: 7736868751883823867
+    second: NEW teashop owner_22
+  - first:
+      213: -3966457652935705891
+    second: NEW teashop owner_23
+  - first:
+      213: -5865711543736717405
+    second: NEW teashop owner_24
+  - first:
+      213: -8838027951138566332
+    second: NEW teashop owner_25
+  - first:
+      213: 3223953799666911334
+    second: NEW teashop owner_26
+  - first:
+      213: -4318830676840351618
+    second: NEW teashop owner_27
+  - first:
+      213: 3341178399299751267
+    second: NEW teashop owner_28
+  - first:
+      213: -1239388585545332105
+    second: NEW teashop owner_29
+  - first:
+      213: -557840619332186772
+    second: NEW teashop owner_30
+  - first:
+      213: 4627016844902609930
+    second: NEW teashop owner_31
+  - first:
+      213: 7848849194471428221
+    second: NEW teashop owner_32
+  - first:
+      213: 7864088777869932605
+    second: NEW teashop owner_33
+  - first:
+      213: -1906231215260195318
+    second: NEW teashop owner_34
+  - first:
+      213: 1133860971846195288
+    second: NEW teashop owner_35
+  - first:
+      213: 482977716988531943
+    second: NEW teashop owner_36
+  - first:
+      213: -8414793926644804693
+    second: NEW teashop owner_37
+  - first:
+      213: 812147097857505368
+    second: NEW teashop owner_38
+  - first:
+      213: -6807512150619270400
+    second: NEW teashop owner_39
+  - first:
+      213: -7095098683509711619
+    second: NEW teashop owner_40
+  - first:
+      213: 2549292193431794997
+    second: NEW teashop owner_41
+  - first:
+      213: -9022271550041860049
+    second: NEW teashop owner_42
+  - first:
+      213: 4907160909932488933
+    second: NEW teashop owner_43
+  - first:
+      213: 8490461237287892425
+    second: NEW teashop owner_44
+  - first:
+      213: -5149361819138518249
+    second: NEW teashop owner_45
+  - first:
+      213: -1947450573615048897
+    second: NEW teashop owner_46
+  - first:
+      213: -1915010946212949109
+    second: NEW teashop owner_47
+  - first:
+      213: 7730924015509301506
+    second: NEW teashop owner_48
+  - first:
+      213: -8086179629135166761
+    second: NEW teashop owner_49
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: NEW teashop owner_0
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 259
+        width: 162
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a9092b612520a0590800000000000000
+      internalID: -7707345260699807590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NEW teashop owner_1
+      rect:
+        serializedVersion: 2
+        x: 309
+        y: 9
+        width: 312
+        height: 582
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4af8d1507d0f6ab80800000000000000
+      internalID: -8383748850009141340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NEW teashop owner_2
+      rect:
+        serializedVersion: 2
+        x: 769
+        y: 259
+        width: 162
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9e4da6d6a08a0ca0800000000000000
+      internalID: -6049881695364231521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NEW teashop owner_3
+      rect:
+        serializedVersion: 2
+        x: 949
+        y: 9
+        width: 312
+        height: 582
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dae913e695f4ac080800000000000000
+      internalID: -9166426846039794003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NEW teashop owner_4
+      rect:
+        serializedVersion: 2
+        x: 1409
+        y: 269
+        width: 162
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ee3675cbca161e6d0800000000000000
+      internalID: -2962979685310962706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NEW teashop owner_5
+      rect:
+        serializedVersion: 2
+        x: 1589
+        y: 9
+        width: 312
+        height: 582
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75fc5eb6c15309f90800000000000000
+      internalID: -6948995828847095977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NEW teashop owner_6
+      rect:
+        serializedVersion: 2
+        x: 2049
+        y: 269
+        width: 162
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53b81997b420db3c0800000000000000
+      internalID: -4342311942529905867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NEW teashop owner_7
+      rect:
+        serializedVersion: 2
+        x: 2229
+        y: 9
+        width: 312
+        height: 582
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f507220b4738d0f80800000000000000
+      internalID: -8138704414394126241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NEW teashop owner_8
+      rect:
+        serializedVersion: 2
+        x: 2689
+        y: 279
+        width: 162
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41a29603b4c6597b0800000000000000
+      internalID: -5218145523048306156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NEW teashop owner_9
+      rect:
+        serializedVersion: 2
+        x: 2869
+        y: 9
+        width: 312
+        height: 582
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c14ab5bd7066f24c0800000000000000
+      internalID: -4310114134439255012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NEW teashop owner_10
+      rect:
+        serializedVersion: 2
+        x: 3329
+        y: 279
+        width: 162
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3691906ced056b920800000000000000
+      internalID: 3005678719051831651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NEW teashop owner_11
+      rect:
+        serializedVersion: 2
+        x: 3509
+        y: 9
+        width: 312
+        height: 582
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53aa5edace77eefe0800000000000000
+      internalID: -1157856195774141899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NEW teashop owner_12
+      rect:
+        serializedVersion: 2
+        x: 3969
+        y: 289
+        width: 162
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d7036540e6c05450800000000000000
+      internalID: 6075574563861891030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NEW teashop owner_13
+      rect:
+        serializedVersion: 2
+        x: 4149
+        y: 9
+        width: 312
+        height: 582
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6c6b1b8bd0519320800000000000000
+      internalID: 2562918566812413036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NEW teashop owner_14
+      rect:
+        serializedVersion: 2
+        x: 4609
+        y: 289
+        width: 162
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5bd42e03a50635830800000000000000
+      internalID: 4058693629674409397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NEW teashop owner_15
+      rect:
+        serializedVersion: 2
+        x: 4789
+        y: 9
+        width: 312
+        height: 582
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 19363f0cca0dcad00800000000000000
+      internalID: 985391858877424529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NEW teashop owner_16
+      rect:
+        serializedVersion: 2
+        x: 5249
+        y: 279
+        width: 162
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44c4c941df9ec2fe0800000000000000
+      internalID: -1212336926487720892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NEW teashop owner_17
+      rect:
+        serializedVersion: 2
+        x: 5429
+        y: 9
+        width: 312
+        height: 582
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0b54f43501b62ba0800000000000000
+      internalID: -6114004808187487477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NEW teashop owner_18
+      rect:
+        serializedVersion: 2
+        x: 5889
+        y: 279
+        width: 162
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f1e1ae43e7491cfd0800000000000000
+      internalID: -2323412662971916769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NEW teashop owner_19
+      rect:
+        serializedVersion: 2
+        x: 6069
+        y: 9
+        width: 312
+        height: 582
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 446576e4eb2b5a760800000000000000
+      internalID: 7468572087492761156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NEW teashop owner_20
+      rect:
+        serializedVersion: 2
+        x: 6529
+        y: 269
+        width: 162
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6460790766cd7db80800000000000000
+      internalID: -8369979049911056826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NEW teashop owner_21
+      rect:
+        serializedVersion: 2
+        x: 6709
+        y: 9
+        width: 312
+        height: 582
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6a29ee2ce1135c40800000000000000
+      internalID: 5499759276046494319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NEW teashop owner_22
+      rect:
+        serializedVersion: 2
+        x: 7169
+        y: 269
+        width: 162
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bfaeadd5321ee5b60800000000000000
+      internalID: 7736868751883823867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NEW teashop owner_23
+      rect:
+        serializedVersion: 2
+        x: 7349
+        y: 9
+        width: 312
+        height: 582
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dda3324a7cf44f8c0800000000000000
+      internalID: -3966457652935705891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NEW teashop owner_24
+      rect:
+        serializedVersion: 2
+        x: 7809
+        y: 259
+        width: 162
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3af2aa8cd6ec89ea0800000000000000
+      internalID: -5865711543736717405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NEW teashop owner_25
+      rect:
+        serializedVersion: 2
+        x: 7989
+        y: 9
+        width: 312
+        height: 582
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44f89618764095580800000000000000
+      internalID: -8838027951138566332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NEW teashop owner_26
+      rect:
+        serializedVersion: 2
+        x: 8449
+        y: 259
+        width: 162
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 668ca6946e8cdbc20800000000000000
+      internalID: 3223953799666911334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NEW teashop owner_27
+      rect:
+        serializedVersion: 2
+        x: 8629
+        y: 9
+        width: 312
+        height: 582
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e78fedda16e6014c0800000000000000
+      internalID: -4318830676840351618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NEW teashop owner_28
+      rect:
+        serializedVersion: 2
+        x: 9089
+        y: 249
+        width: 162
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 36d48754d004e5e20800000000000000
+      internalID: 3341178399299751267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NEW teashop owner_29
+      rect:
+        serializedVersion: 2
+        x: 9269
+        y: 9
+        width: 312
+        height: 582
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77a85e3e5aecccee0800000000000000
+      internalID: -1239388585545332105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NEW teashop owner_30
+      rect:
+        serializedVersion: 2
+        x: 9729
+        y: 249
+        width: 162
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c6dcb6b89e62248f0800000000000000
+      internalID: -557840619332186772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NEW teashop owner_31
+      rect:
+        serializedVersion: 2
+        x: 9909
+        y: 9
+        width: 312
+        height: 582
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a043b223e47763040800000000000000
+      internalID: 4627016844902609930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NEW teashop owner_32
+      rect:
+        serializedVersion: 2
+        x: 10369
+        y: 239
+        width: 162
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d709414e1c6bcec60800000000000000
+      internalID: 7848849194471428221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NEW teashop owner_33
+      rect:
+        serializedVersion: 2
+        x: 10549
+        y: 9
+        width: 312
+        height: 582
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d38b217e31bd22d60800000000000000
+      internalID: 7864088777869932605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NEW teashop owner_34
+      rect:
+        serializedVersion: 2
+        x: 11009
+        y: 239
+        width: 162
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a06a7a23fc4bb85e0800000000000000
+      internalID: -1906231215260195318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NEW teashop owner_35
+      rect:
+        serializedVersion: 2
+        x: 11189
+        y: 9
+        width: 312
+        height: 582
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8585293eb884cbf00800000000000000
+      internalID: 1133860971846195288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NEW teashop owner_36
+      rect:
+        serializedVersion: 2
+        x: 11649
+        y: 229
+        width: 162
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e4d787bca1e3b600800000000000000
+      internalID: 482977716988531943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NEW teashop owner_37
+      rect:
+        serializedVersion: 2
+        x: 11829
+        y: 9
+        width: 312
+        height: 582
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba3d838d185a83b80800000000000000
+      internalID: -8414793926644804693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NEW teashop owner_38
+      rect:
+        serializedVersion: 2
+        x: 12289
+        y: 219
+        width: 162
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85839298b73554b00800000000000000
+      internalID: 812147097857505368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NEW teashop owner_39
+      rect:
+        serializedVersion: 2
+        x: 12469
+        y: 9
+        width: 312
+        height: 582
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 003de2a44cbd681a0800000000000000
+      internalID: -6807512150619270400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NEW teashop owner_40
+      rect:
+        serializedVersion: 2
+        x: 12929
+        y: 219
+        width: 162
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfcdf0bb655298d90800000000000000
+      internalID: -7095098683509711619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NEW teashop owner_41
+      rect:
+        serializedVersion: 2
+        x: 13109
+        y: 9
+        width: 312
+        height: 582
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 535bd224eb7e06320800000000000000
+      internalID: 2549292193431794997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NEW teashop owner_42
+      rect:
+        serializedVersion: 2
+        x: 13569
+        y: 229
+        width: 162
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2854a8c3d37ac280800000000000000
+      internalID: -9022271550041860049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NEW teashop owner_43
+      rect:
+        serializedVersion: 2
+        x: 13749
+        y: 9
+        width: 312
+        height: 582
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e8653c29dcb91440800000000000000
+      internalID: 4907160909932488933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NEW teashop owner_44
+      rect:
+        serializedVersion: 2
+        x: 14209
+        y: 229
+        width: 162
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c5b4cbc28d24d570800000000000000
+      internalID: 8490461237287892425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NEW teashop owner_45
+      rect:
+        serializedVersion: 2
+        x: 14389
+        y: 9
+        width: 312
+        height: 582
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7131a4e35bac988b0800000000000000
+      internalID: -5149361819138518249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NEW teashop owner_46
+      rect:
+        serializedVersion: 2
+        x: 14849
+        y: 249
+        width: 162
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f375b06750449f4e0800000000000000
+      internalID: -1947450573615048897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NEW teashop owner_47
+      rect:
+        serializedVersion: 2
+        x: 15029
+        y: 9
+        width: 312
+        height: 582
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b831ef9c0b38c65e0800000000000000
+      internalID: -1915010946212949109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NEW teashop owner_48
+      rect:
+        serializedVersion: 2
+        x: 15489
+        y: 249
+        width: 162
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 209e7f19e62c94b60800000000000000
+      internalID: 7730924015509301506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: NEW teashop owner_49
+      rect:
+        serializedVersion: 2
+        x: 15669
+        y: 9
+        width: 312
+        height: 582
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d2066f387e18cf80800000000000000
+      internalID: -8086179629135166761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable: {}
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

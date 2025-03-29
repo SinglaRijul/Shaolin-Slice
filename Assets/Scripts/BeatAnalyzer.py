@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 from scipy.signal import find_peaks
 
-file_path = "H:\game jam 22 march\Shaolin-Slice\Assets\Music\Soundtrack\Rise of the Tea Shop General.mp3"
+file_path = "H:\game jam 22 march\Shaolin-Slice\Assets\Music\Soundtrack\stage 5 fr.mp3"
 
 # Load the audio file
 audio_data, sample_rate = librosa.load(file_path)
@@ -27,7 +27,7 @@ beat_times = librosa.frames_to_time(beats, sr=sample_rate, hop_length=hop_length
 
 
 # Save to JSON file
-output_path = "H:\\game jam 22 march\\Shaolin-Slice\\Assets\\BeatMaps\\1_beatmap.json"
+output_path = "H:\\game jam 22 march\\Shaolin-Slice\\Assets\\BeatMaps\\5_beatmap.json"
 beat_times_list = beat_times.tolist()
 
 with open(output_path, "w") as f:

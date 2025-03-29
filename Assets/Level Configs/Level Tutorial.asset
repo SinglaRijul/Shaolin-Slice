@@ -19,4 +19,4 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 0294761fb01b2b340b42470024359312, type: 3}
   - {fileID: 21300000, guid: a1fd6e11bbf1d9c4196545a1a99cc663, type: 3}
   levelAudio: {fileID: 8300000, guid: 3c428c9e61a6b5643856ea2b42a86d97, type: 3}
-  npcAnimController: {fileID: 0}
+  npcAnimController: {fileID: 9100000, guid: 5c9d9ecc7b36c0a4598f2400324541e8, type: 2}

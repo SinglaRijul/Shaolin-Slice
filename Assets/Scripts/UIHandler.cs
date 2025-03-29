@@ -72,10 +72,19 @@ public class UIHandler : MonoBehaviour
         SceneManager.LoadScene(0);
     }
 
+    public void OnClickBackToLevelSelect()
+    {
+        Time.timeScale = 1;
+        AudioListener.pause = false;
+        
+        SceneManager.LoadScene(1);
+    }
 
     public void SetPauseMenu()
     {
         pauseMenuObj.SetActive(!pauseMenuObj.activeInHierarchy);
+        Time.timeScale = pauseMenuObj.activeInHierarchy ? 0 : 1;
+        AudioListener.pause = pauseMenuObj.activeInHierarchy ? true : false;
     }
 
     public void SetGameStatus(bool flag , int finalScore){

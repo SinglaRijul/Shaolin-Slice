@@ -10,7 +10,7 @@ public class NoteSpawner : MonoBehaviour
     [SerializeField] List<Transform> hitPoints; 
     [SerializeField] List<Transform> spawnPoints; 
     [SerializeField] float arrowSpeed; 
-    [SerializeField] float speedAdjustmentfactor = 1f;
+    [SerializeField] float speedAdjustmentfactor = 0.9f;
 
     private int nextBeatIndex = 0;
 

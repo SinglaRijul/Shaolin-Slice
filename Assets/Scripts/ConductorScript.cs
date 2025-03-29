@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class ConductorScript : MonoBehaviour
@@ -33,12 +32,13 @@ public class ConductorScript : MonoBehaviour
     [SerializeField] List<Sprite> playerSprites;
 
     [SerializeField] GameObject npcObj;
+    [SerializeField] GameObject bgObj;
     SpriteRenderer npcSR;
     [SerializeField] SpriteRenderer playerSR;
 
     [SerializeField] List<LevelConfigSO> levelConfigs;
 
-    [SerializeField] List<AudioClip> levelAudios;
+    [SerializeField] List<Sprite> bgSprites;
 
     BeatScroller beatScrollerScript;
     NoteSpawner noteSpawner;
@@ -49,8 +49,9 @@ public class ConductorScript : MonoBehaviour
 
     UIHandler uiHandler;
 
-
+    bool isWaiting = false;
     Animator anim;
+    
 
     
     void Start()
@@ -74,10 +75,13 @@ public class ConductorScript : MonoBehaviour
         //songPosition = audioSource.time;
         //Debug.Log($"song position : {songPosition}");
         
-        if(!audioSource.isPlaying && currentLevel!=-1 )
+        if(!audioSource.isPlaying && currentLevel!=-1 && !isWaiting)
         {
-            uiHandler.SetGameStatus(true , score);
+            if(AudioListener.pause){return;}
+            isWaiting = false;
             currentLevel=-1;
+            uiHandler.SetGameStatus(true , score);
+            
         }
 
         if(!songStarted) return;
@@ -100,10 +104,13 @@ public class ConductorScript : MonoBehaviour
     public IEnumerator StartSongWithSync(int levelId)
     {
         currentLevel = levelId;
+        songStarted = false;
 
         InitSprites();
         InitScore();
         noteSpawner.InitVariables();
+
+        bgObj.GetComponent<SpriteRenderer>().sprite = bgSprites[levelId];
         // Start the audio
         audioSource.clip = levelConfigs[levelId].GetLevelAudio();
         
@@ -122,6 +129,10 @@ public class ConductorScript : MonoBehaviour
         secsPerBeat = 60f/songsBpm;
         beatScrollerScript.SetBeatTempo(songsBpm/60f);
         
+        isWaiting = true;
+        yield return new WaitForSeconds(1.5f);
+        isWaiting= false;
+
         audioSource.Play();
         
         
@@ -141,7 +152,7 @@ public class ConductorScript : MonoBehaviour
     
     public void InitSprites()
     {
-        if(playerSR || npcSR == null) return;
+        if(playerSR == null || npcSR == null) return;
         
         //player idle sprite
         playerSR.sprite = playerIdleSprite;

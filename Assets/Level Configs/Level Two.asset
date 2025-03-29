@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac644291975be474e85cfb27fa7f8475, type: 3}
   m_Name: Level Two
   m_EditorClassIdentifier: 
-  npcIdleSprite: {fileID: 0}
+  npcIdleSprite: {fileID: -715558269, guid: 9f208ab6ba367c54a9b6a5810e8e2ae7, type: 3}
   npcSprites: []
-  levelAudio: {fileID: 0}
-  npcAnimController: {fileID: 0}
+  levelAudio: {fileID: 8300000, guid: 0f379e1caa635894db1fa4645ccb92ce, type: 3}
+  npcAnimController: {fileID: 9100000, guid: 9e5673a5dcb6fd3409625cc2c49f5c43, type: 2}

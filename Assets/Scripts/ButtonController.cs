@@ -39,14 +39,14 @@ public class ButtonController : MonoBehaviour
             float stayDuration = Time.time - noteEntryTime;
 
 
-            if (stayDuration <= 0.1f)
+            if (stayDuration <= 0.12f)
             {
                 //Debug.Log("🎯 Perfect Hit!");
                 theSR.color = Color.green;
                 conductorScript.AddScore(50);
                 conductorScript.SetHitText("PERFECT!");
             }
-            else if (stayDuration <= 0.2f)
+            else if (stayDuration <= 0.22f)
             {
                 //Debug.Log("✔️ Good Hit!");
                 theSR.color = Color.yellow;

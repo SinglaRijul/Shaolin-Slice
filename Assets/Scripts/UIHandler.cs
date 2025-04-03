@@ -37,8 +37,6 @@ public class UIHandler : MonoBehaviour
         }
     }
 
-
-
     public void ShowLevelSelector()
     {
         if(!levelSelectorObj.activeInHierarchy) levelSelectorObj.SetActive(true);

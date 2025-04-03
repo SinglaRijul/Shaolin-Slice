@@ -11,7 +11,7 @@ public class StartUIManager : MonoBehaviour
 
     [SerializeField] List<AudioClip> clickSounds;
     [SerializeField] Image fadePanel;  
-    [SerializeField] float fadeDuration = 1.5f;  
+    [SerializeField] float fadeDuration = 1.3f;  
 
     AudioSource audioSource;
 
@@ -60,8 +60,6 @@ public class StartUIManager : MonoBehaviour
             yield return null;
         }
 
-        
-
         // Load the scene asynchronously
         AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(sceneName);
         
@@ -69,7 +67,6 @@ public class StartUIManager : MonoBehaviour
         {
             yield return null;
         }
-
-        
+    
     }
 }

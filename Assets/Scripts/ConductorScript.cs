@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class ConductorScript : MonoBehaviour
 {
-    
+    [Header("Song Params")]
     [SerializeField]
     float songsBpm;
 
@@ -16,32 +16,24 @@ public class ConductorScript : MonoBehaviour
     float songPosition;
 
     [SerializeField]
-    float songPosInBeats;
-
-    [SerializeField]
     float secsPassedSinceStart;
 
     bool songStarted = false;
- 
-    AudioSource audioSource;
-
     int currentLevel = -1;
 
+    [Header("Player and Npc")]
     [SerializeField] Sprite playerIdleSprite;
 
     [SerializeField] List<Sprite> playerSprites;
-
-    [SerializeField] GameObject npcObj;
-    [SerializeField] GameObject bgObj;
-    SpriteRenderer npcSR;
     [SerializeField] SpriteRenderer playerSR;
-
+    
+    [SerializeField] GameObject npcObj;
+    
+    SpriteRenderer npcSR;
+    
     [SerializeField] List<LevelConfigSO> levelConfigs;
-
+    [SerializeField] GameObject bgObj;
     [SerializeField] List<Sprite> bgSprites;
-
-    BeatScroller beatScrollerScript;
-    NoteSpawner noteSpawner;
 
     int score =0;
     [SerializeField] TextMeshProUGUI scoreText;
@@ -51,6 +43,10 @@ public class ConductorScript : MonoBehaviour
 
     bool isWaiting = false;
     Animator anim;
+    AudioSource audioSource;
+
+    BeatScroller beatScrollerScript;
+    NoteSpawner noteSpawner;
     
 
     
@@ -61,24 +57,22 @@ public class ConductorScript : MonoBehaviour
         anim = npcObj.GetComponent<Animator>();
         uiHandler = FindAnyObjectByType<UIHandler>();
         noteSpawner = FindAnyObjectByType<NoteSpawner>();
-
-        currentLevel = -1;
-
         npcSR = npcObj.GetComponent<SpriteRenderer>();
         
+        currentLevel = -1;
         secsPerBeat = 60f/ songsBpm;
 
     }
 
     void Update()
-    {   
-        //songPosition = audioSource.time;
-        //Debug.Log($"song position : {songPosition}");
+    {     
         
         if(!audioSource.isPlaying && currentLevel!=-1 && !isWaiting)
         {
             if(AudioListener.pause){return;}
-            isWaiting = false;
+
+            //set game over
+            isWaiting = false;      
             currentLevel=-1;
             uiHandler.SetGameStatus(true , score);
             
@@ -87,20 +81,11 @@ public class ConductorScript : MonoBehaviour
         if(!songStarted) return;
 
         songPosition = (float)(AudioSettings.dspTime - secsPassedSinceStart);
-        //songPosition = audioSource.time;
-
-        songPosInBeats = songPosition/secsPerBeat;
-
-
 
     }
 
+    public float GetSongPosition() => songPosition;
 
-    public float GetSongPosition()
-    {
-        return songPosition;
-        //return songPosInBeats;
-    }
     public IEnumerator StartSongWithSync(int levelId)
     {
         currentLevel = levelId;
@@ -111,6 +96,7 @@ public class ConductorScript : MonoBehaviour
         noteSpawner.InitVariables();
 
         bgObj.GetComponent<SpriteRenderer>().sprite = bgSprites[levelId];
+        
         // Start the audio
         audioSource.clip = levelConfigs[levelId].GetLevelAudio();
         
@@ -120,9 +106,9 @@ public class ConductorScript : MonoBehaviour
             //play animation
             anim.runtimeAnimatorController = levelConfigs[currentLevel].GetAnimControllerNpc();
         }
+
         //calculation
         float songDuration = audioSource.clip.length;
-        //Debug.Log($"song duration: {songDuration}");
 
         beatScrollerScript.LoadBeatData(levelId);
         songsBpm = (beatScrollerScript.GetTotalBeats()/songDuration)*60f;
@@ -134,9 +120,7 @@ public class ConductorScript : MonoBehaviour
         isWaiting= false;
 
         audioSource.Play();
-        
-        
-        
+               
         // Wait until the audio source actually starts playing
         while (audioSource.time <= 0)
         {
@@ -164,14 +148,16 @@ public class ConductorScript : MonoBehaviour
 
     public void SetNpcSprite(int index)
     {
+        //only curr level = 0 has npc idle sprite
         if(currentLevel!=0) return;
+        
         // 0 means idle
         if(index == 0) npcSR.sprite = levelConfigs[currentLevel].GetNpcIdleSprite();
         else
         {
             npcSR.sprite = levelConfigs[currentLevel].GetNpcSpriteAt(index-1);
-
         }
+
     }
     public void SetPlayerSprite(int index)
     {
@@ -180,20 +166,17 @@ public class ConductorScript : MonoBehaviour
         else
         {
             playerSR.sprite = playerSprites[index-1];
-
         }
     }
 
     public bool GetSongStarted() => songStarted;
-
 
     public int GetScore() => score;
 
     public void AddScore(int add) 
     {
         //anim.SetBool("hasScored" , true);
-        score += add;
-        
+        score += add;  
     }
 
     void InitScore()

@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.IO;
 using UnityEngine;
@@ -10,10 +11,12 @@ public class BeatScroller : MonoBehaviour
 
     List<float> beatTimes = new List<float>();
 
+
+    [SerializeField] List<TextAsset> beatMapFiles;
     [SerializeField] int totalBeats;
+
     void Start()
     {
-        //LoadBeatTimes();
         totalBeats = beatTimes.Count;
 
 
@@ -36,28 +39,28 @@ public class BeatScroller : MonoBehaviour
 
         }
 
-
-
     }
-
 
     void LoadBeatTimes(string levelid)
     {
         //string filepath =  Application.dataPath + $"/BeatMaps/{levelid}_beatmap.json";
-        string filepath = Path.Combine(Application.streamingAssetsPath, $"BeatMaps/{levelid}_beatmap.json");
+        // string filepath = Path.Combine(Application.streamingAssetsPath, $"BeatMaps/{levelid}_beatmap.json");
 
-        if(File.Exists(filepath))
-        {
-            string json = File.ReadAllText(filepath);
-            BeatData beatData = JsonUtility.FromJson<BeatData>(json);
-            beatTimes = beatData.beats;
-            Debug.Log($"Loaded beats from {filepath}");
+        // if(File.Exists(filepath))
+        // {
+        //     //string json = File.ReadAllText(filepath);
+        //     BeatData beatData = JsonUtility.FromJson<BeatData>(json);
+        //     beatTimes = beatData.beats;
+        //     Debug.Log($"Loaded beats from {filepath}");
 
-        }
-        else
-        {
-            Debug.Log($"File not found!");
-        }
+        // }
+        // else
+        // {
+        //     Debug.Log($"File not found!");
+        // }
+
+        BeatData beatData = JsonUtility.FromJson<BeatData>(beatMapFiles[Convert.ToInt32(levelid)].text);
+        beatTimes = beatData.beats;
         
     }
 
@@ -78,13 +81,7 @@ public class BeatScroller : MonoBehaviour
 
 }
 
-
-
-
-
 [System.Serializable]
 public class BeatData{
     public List<float> beats;
 }
-
-//0.06965986394557823, 0.46439909297052157, 0.8823582766439909, 1.3003174603174603, 1.7182766439909296, 2.136235827664399, 2.5309750566893423, 2.948934240362812, 3.3668934240362813, 3.7616326530612243, 4.179591836734694, 4.574331065759637, 4.992290249433107, 5.410249433106576, 5.828208616780046, 6.246167800453515, 6.664126984126984, 7.082086167800454, 7.476825396825397, 7.894784580498866, 8.289523809523809, 8.70748299319728,
